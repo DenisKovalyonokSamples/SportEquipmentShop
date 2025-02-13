@@ -23,6 +23,7 @@ namespace DK.Ordering.Application.Handlers
         {
             var orderEntity = _mapper.Map<Order>(request);
             var generatedOrder = await _orderRepository.AddAsync(orderEntity);
+
             _logger.LogInformation(($"Order {generatedOrder} successfully created."));
             
             return generatedOrder.Id;
