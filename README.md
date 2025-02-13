@@ -8,13 +8,13 @@ Sport Equipment Shop sample web application.
 -	Docker
 -	Kubernetes
 -	Azure
-Microservices
-Service Mesh
-Angular
-ELK Stack
-Pub/Sub Pattern
-GRPC
-Repository Pattern
-Unit of Work Pattern
-Specification Pattern
-Helm Charts
+-	Microservices
+-	Service Mesh
+-	Angular
+-	ELK Stack
+-	Pub/Sub Pattern
+-	GRPC
+-	Repository Pattern
+-	Unit of Work Pattern
+-	Specification Pattern
+-	Helm Charts
