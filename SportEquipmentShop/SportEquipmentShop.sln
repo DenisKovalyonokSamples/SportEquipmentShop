@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DK.Common.Logging", "DK.Com
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DK.EventBus.Messages", "DK.EventBus.Messages\DK.EventBus.Messages.csproj", "{F32F5C5A-24DB-4C41-8BA0-B1D77312DFA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DK.Ordering.API", "DK.Ordering.API\DK.Ordering.API.csproj", "{37A23946-F211-432B-A1EB-FD969F28C9D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{F32F5C5A-24DB-4C41-8BA0-B1D77312DFA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F32F5C5A-24DB-4C41-8BA0-B1D77312DFA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F32F5C5A-24DB-4C41-8BA0-B1D77312DFA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37A23946-F211-432B-A1EB-FD969F28C9D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37A23946-F211-432B-A1EB-FD969F28C9D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37A23946-F211-432B-A1EB-FD969F28C9D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37A23946-F211-432B-A1EB-FD969F28C9D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +62,7 @@ Global
 		{1DBC2905-30D2-4CFA-8E0A-AC8D812793FD} = {4B12A33A-F30A-4122-8C42-891573DFB786}
 		{9BCE8C63-2585-4A9C-842D-0D9ED7F997F3} = {20294A26-F1A2-4B77-AB31-176DFCCD2F4D}
 		{F32F5C5A-24DB-4C41-8BA0-B1D77312DFA7} = {20294A26-F1A2-4B77-AB31-176DFCCD2F4D}
+		{37A23946-F211-432B-A1EB-FD969F28C9D3} = {4B12A33A-F30A-4122-8C42-891573DFB786}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EECCA308-2F6C-4198-8EF4-504EB6A85988}
