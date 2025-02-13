@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DK.Ordering.Infrastructure"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DK.Ordering.Application", "DK.Ordering.Application\DK.Ordering.Application.csproj", "{1DBC2905-30D2-4CFA-8E0A-AC8D812793FD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{20294A26-F1A2-4B77-AB31-176DFCCD2F4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DK.Common.Logging", "DK.Common.Logging\DK.Common.Logging.csproj", "{9BCE8C63-2585-4A9C-842D-0D9ED7F997F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{1DBC2905-30D2-4CFA-8E0A-AC8D812793FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DBC2905-30D2-4CFA-8E0A-AC8D812793FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DBC2905-30D2-4CFA-8E0A-AC8D812793FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BCE8C63-2585-4A9C-842D-0D9ED7F997F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BCE8C63-2585-4A9C-842D-0D9ED7F997F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BCE8C63-2585-4A9C-842D-0D9ED7F997F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BCE8C63-2585-4A9C-842D-0D9ED7F997F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +48,7 @@ Global
 		{4B12A33A-F30A-4122-8C42-891573DFB786} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{474AAF69-30DB-4613-9793-A84107BB0A08} = {4B12A33A-F30A-4122-8C42-891573DFB786}
 		{1DBC2905-30D2-4CFA-8E0A-AC8D812793FD} = {4B12A33A-F30A-4122-8C42-891573DFB786}
+		{9BCE8C63-2585-4A9C-842D-0D9ED7F997F3} = {20294A26-F1A2-4B77-AB31-176DFCCD2F4D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EECCA308-2F6C-4198-8EF4-504EB6A85988}
