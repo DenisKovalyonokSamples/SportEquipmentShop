@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DK.Common.Logging\DK.Common.Logging.csproj" />
+    <ProjectReference Include="..\DK.EventBus.Messages\DK.EventBus.Messages.csproj" />
+    <ProjectReference Include="..\DK.Ordering.Core\DK.Ordering.Core.csproj" />
+  </ItemGroup>
+
 </Project>
