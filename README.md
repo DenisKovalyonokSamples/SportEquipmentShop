@@ -3,11 +3,11 @@ Sport Equipment Shop sample web application.
 
 # Technical Stack
 
-Clean Architecture
-.Net Core
-Docker
-Kubernetes
-Azure
+-	Clean Architecture
+-	.Net Core
+-	Docker
+-	Kubernetes
+-	Azure
 Microservices
 Service Mesh
 Angular
