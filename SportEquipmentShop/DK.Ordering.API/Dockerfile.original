@@ -12,11 +12,6 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["DK.Ordering.API/DK.Ordering.API.csproj", "DK.Ordering.API/"]
-COPY ["DK.Common.Logging/DK.Common.Logging.csproj", "DK.Common.Logging/"]
-COPY ["DK.EventBus.Messages/DK.EventBus.Messages.csproj", "DK.EventBus.Messages/"]
-COPY ["DK.Ordering.Application/DK.Ordering.Application.csproj", "DK.Ordering.Application/"]
-COPY ["DK.Ordering.Core/DK.Ordering.Core.csproj", "DK.Ordering.Core/"]
-COPY ["DK.Ordering.Infrastructure/DK.Ordering.Infrastructure.csproj", "DK.Ordering.Infrastructure/"]
 RUN dotnet restore "./DK.Ordering.API/DK.Ordering.API.csproj"
 COPY . .
 WORKDIR "/src/DK.Ordering.API"

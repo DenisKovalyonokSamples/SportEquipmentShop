@@ -1,4 +1,6 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using DK.Ordering.Infrastructure.Data;
+using DK.Ordering.Infrastructure.Data.Seed;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Polly;
 
@@ -20,7 +22,7 @@ namespace DK.Ordering.API.Extensions
 
                     var retry = Policy.Handle<SqlException>()
                         .WaitAndRetry(
-                            retryCount: 5,
+                            retryCount: 2,
                             sleepDurationProvider: retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
                             onRetry: (exception, span, cont) =>
                             {

@@ -23,7 +23,8 @@ namespace DK.Common.Logging
                     .Enrich.WithExceptionDetails()
                     .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
                     .MinimumLevel.Override("Microsoft.Hosting.Lifetime", LogEventLevel.Information)
-                    .WriteTo.Console();
+                    .WriteTo.Console()
+                    .WriteTo.File("log.txt", rollingInterval: RollingInterval.Day);
                 if (context.HostingEnvironment.IsDevelopment())
                 {
                     loggerConfiguration.MinimumLevel.Override("Catalog", LogEventLevel.Debug);
@@ -32,27 +33,27 @@ namespace DK.Common.Logging
                     loggerConfiguration.MinimumLevel.Override("Ordering", LogEventLevel.Debug);
                 }
 
-                var elasticUrl = context.Configuration.GetValue<string>("ElasticConfiguration:Uri");
-                if (!string.IsNullOrEmpty(elasticUrl))
-                {
-                    loggerConfiguration.WriteTo.Elasticsearch(new[] { new Uri(elasticUrl) }, opts =>
-                        {
+                //var elasticUrl = context.Configuration.GetValue<string>("ElasticConfiguration:Uri");
+                //if (!string.IsNullOrEmpty(elasticUrl))
+                //{
+                //    loggerConfiguration.WriteTo.Elasticsearch(new[] { new Uri(elasticUrl) }, opts =>
+                //        {
 
-                            opts.DataStream = new DataStreamName("logs", "console-example", "demo");
-                            opts.BootstrapMethod = BootstrapMethod.Failure;
-                            opts.ConfigureChannel = channelOpts =>
-                            {
-                                channelOpts.BufferOptions = new BufferOptions
-                                {
-                                    ExportMaxConcurrency = 10
-                                };
-                            };
-                        }, transport =>
-                        {
-                            // transport.Authentication(new BasicAuthentication(username, password)); // Basic Auth
-                            // transport.Authentication(new ApiKey(base64EncodedApiKey)); // ApiKey
-                        });
-                }
+                //            opts.DataStream = new DataStreamName("logs", "console-example", "demo");
+                //            opts.BootstrapMethod = BootstrapMethod.Failure;
+                //            opts.ConfigureChannel = channelOpts =>
+                //            {
+                //                channelOpts.BufferOptions = new BufferOptions
+                //                {
+                //                    ExportMaxConcurrency = 10
+                //                };
+                //            };
+                //        }, transport =>
+                //        {
+                //            // transport.Authentication(new BasicAuthentication(username, password)); // Basic Auth
+                //            // transport.Authentication(new ApiKey(base64EncodedApiKey)); // ApiKey
+                //        });
+                //}
             };
     }
 }

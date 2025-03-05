@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DK.Ordering.Application.Commands
 {
@@ -6,6 +7,7 @@ namespace DK.Ordering.Application.Commands
     {
         public int Id { get; set; }
         public string? UserName { get; set; }
+        [Column(TypeName = "decimal(18,2)")]
         public decimal? TotalPrice { get; set; }
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
