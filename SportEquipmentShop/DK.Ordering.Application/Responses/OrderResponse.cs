@@ -6,7 +6,6 @@ namespace DK.Ordering.Application.Responses
     {
         public int Id { get; set; }
         public string? UserName { get; set; }
-        [Column(TypeName = "decimal(18,2)")]
         public decimal? TotalPrice { get; set; }
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
